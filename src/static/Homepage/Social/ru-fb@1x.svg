@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>ru-fb@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="D-02-home-menu-b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-718.000000, -638.000000)">
+        <g id="MENU">
+            <g id="Social-Icons" transform="translate(644.000000, 638.000000)">
+                <g id="ru-fb" transform="translate(74.000000, 0.000000)">
+                    <circle id="btn" fill="#000000" cx="16" cy="16" r="16"></circle>
+                    <path d="M16.7190622,23 L16.7190622,16.6139798 L18.862647,16.6139798 L19.1835699,14.1251898 L16.7190622,14.1251898 L16.7190622,12.5362073 C16.7190622,11.8156445 16.9191293,11.3246213 17.9524591,11.3246213 L19.270381,11.3240035 L19.270381,9.09805635 C19.042386,9.0677806 18.2600978,9 17.3499718,9 C15.4498288,9 14.149022,10.1598083 14.149022,12.2897998 L14.149022,14.1251898 L12,14.1251898 L12,16.6139798 L14.149022,16.6139798 L14.149022,23 L16.7190622,23 Z" id="ru-facebook-icon" fill="#FEFEFE"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

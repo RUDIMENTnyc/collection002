@@ -40,7 +40,18 @@
   <body ng-app="app">
     <!-- <grass-header></grass-header> -->
     
-
+    
     <ui-view></ui-view>
+
+    <div class="nav">
+      <nav class="primary-nav" ng-class="{true: 'showMenu'}[showMenu]">
+        <desk-nav></desk-nav>
+      </nav> 
+    </div>
+
+    <a href="" class="nav-burger notxt" ng-click="showMenu = !showMenu">Menu</a>
+
+    <div class="logo notxt">RUDIMENT</div>
+
   </body>
 </html>
