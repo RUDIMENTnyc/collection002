@@ -7,6 +7,19 @@ function mainController($document, $log, $scope, $http, $location, $state, $wind
   //   $log.info($location.path());
   //   return ($location.path().substr(0, path.length) === path) ? 'active' : '';
   // };
+  // $scope.slickConfig = {
+  //   enabled: true,
+  //   autoplay: true,
+  //   draggable: false,
+  //   autoplaySpeed: 3000,
+  //   method: {},
+  //   event: {
+  //     beforeChange: function (event, slick, currentSlide, nextSlide) {
+  //     },
+  //     afterChange: function (event, slick, currentSlide, nextSlide) {
+  //     }
+  //   }
+  // };
 
 }
 

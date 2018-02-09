@@ -1,18 +1,18 @@
 function grassHeaderController($log, $scope) {
-  var slide = false;
+  // var slide = false;
   
-  $scope.someMethod = function () {
-    // $log.info('woop');
-    if (angular.element('#slidePanel').hasClass('ng-hide')) {
-      $log.info('yes');
-      angular.element('#nav-icon4').addClass('open');
-    } else {
-      $log.info('nope');
-      // $log.info('poow', angular.element('#slidePanel'));
-      angular.element('#nav-icon4').removeClass('open');
-    }
-    // angular.element('#nav-icon4').addClass('open');
-  };
+  // $scope.someMethod = function () {
+  //   // $log.info('woop');
+  //   if (angular.element('#slidePanel').hasClass('ng-hide')) {
+  //     $log.info('yes');
+  //     angular.element('#nav-icon4').addClass('open');
+  //   } else {
+  //     $log.info('nope');
+
+  //     angular.element('#nav-icon4').removeClass('open');
+  //   }
+
+  // };
 
   // $scope.$watch(
   //   function ($scope) {

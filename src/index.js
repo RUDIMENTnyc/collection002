@@ -14,6 +14,7 @@ var grassHeader = require('./app/grassHeader');
 
 require('./index.styl');
 require('angular-animate');
+// require('angular-slick-carousel');
 var app = 'app';
 module.exports = app;
 
