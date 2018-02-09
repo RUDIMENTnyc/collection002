@@ -143,6 +143,14 @@ body,
   overflow-x hidden
   
 
+html,body 
+  margin 0 
+  padding 0
+  
+*
+  box-sizing border-box
+  
+
 body 
    font-family 'Circular Std'
 
@@ -332,7 +340,7 @@ input
 
   // FPO padding top
   .main-container 
-    padding-top 40px
+    // padding-top 40px
     
   .hburger
     position fixed 
@@ -810,23 +818,71 @@ input
 
 
 
-.container {
-  margin: 0 auto;
-  padding: 40px;
-  width: 80%;
-  color: #333;
-  background: #419be0;
-  margin-top: 300px;
-}
-
-.slick-slide {
-  text-align: center;
-  color: #419be0;
-  background: white;
-  border:2px solid red;
-}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  HOME CAROUSEL
+
+
+
+.home-container 
+  margin 0
+  padding 0
+  width 100%
+  height 100vh
+
+  background white
+
+  
+
+
+.slick-slide 
+  text-align center
+  color black
+  margin 0
+  padding 0
+  width 100%
+  height 100vh
+  
+
+
+
+
+
+.slick-slider 
+  margin 0
+  padding 0
+
+  
+
+.single-item
+  .slidee 
+    position relative
+  .slide1
+    background transparent url('/static/Homepage/ru-header-1@2x.jpg') center center no-repeat
+    background-size cover
+    
+  .slide2
+    background #999
+    
+  .slide3
+    background #ccc
 
 // NAV
 
@@ -919,7 +975,6 @@ input
   background transparent url('/static/Homepage/ru-logo@1x.svg') center top no-repeat
   background-size contain
   z-index 1000
-  border 1px solid red
   left 50%
   transform translateX(-50%)
   
