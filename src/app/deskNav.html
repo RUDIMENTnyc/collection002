@@ -2,10 +2,15 @@
   <h2>{{$ctrl.text}}</h2>
 </div> -->
 
-<ul class="desk-menu clearfix">
-  <li ng-class="getClass('/main')"><a class="b4" href="/main">Main</a></li>
-  <li ng-class="getClass('/chicago')"><a class="b4" href="/chicago">Chicago</a></li>
-  <li ng-class="getClass('/aspen')"><a class="b4" href="/aspen">Aspen</a></li>
-  <li ng-class="getClass('/san-francisco')"><a class="b4" href="/san-francisco">San Francisco</a></li>
+<ul class="menu-links clearfix">
+  <li ng-class="getClass('/main')"><a class="" href="/main">Home</a></li>
+  <li ng-class="getClass('/brand')"><a class="" href="/brand">Brand</a></li>
+  <li ng-class="getClass('/collection002')">
+    <a class="" href="/collection002">Collection</a>
+    <a class="mini-nav-lnk first-mini" href="/collection002">002</a> <span class="pipe">|</span>
+    <a class="mini-nav-lnk" href="/collection001">001</a>
+  </li>
+
+  <li ng-class="getClass('/objets')"><a class="" href="/objets">Objets Trouv&#233;s</a></li>
 
 </ul>

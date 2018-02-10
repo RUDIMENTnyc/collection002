@@ -16,18 +16,23 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       component: 'main'
     })
 
-    .state('aspen', {
-      url: '/aspen',
-      component: 'aspen'
+    .state('collection002', {
+      url: '/collection002',
+      component: 'collection002'
     })
 
-    .state('sanFrancisco', {
-      url: '/san-francisco',
-      component: 'sanFrancisco'
+    .state('collection001', {
+      url: '/collection001',
+      component: 'collection001'
     })
 
-    .state('chicago', {
-      url: '/chicago',
-      component: 'chicago'
+    .state('objets', {
+      url: '/objets',
+      component: 'objets'
+    })
+
+    .state('brand', {
+      url: '/brand',
+      component: 'brand'
     });
 }

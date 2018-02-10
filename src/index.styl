@@ -216,55 +216,233 @@ input
 /* ==========================  */
 
 
-.desk-menu
-  display none
 
-@media only screen and (min-width:800px)
 
-  .desk-menu
-    // border 1px dotted blue
-    display block
-    margin-bottom 20px
+
+// NAV
+
+.nav 
+  position fixed
+  top 0
+  left 0
+  width 100%
+  z-index 10
+  // height 80vh
+  // @media only screen and (min-width:0px) and (max-width:579px)
+  //   height 100vh
+
+
+.primary-nav 
+  width 100%
+  background #fff
+  height 0
+  transition all 0.25s linear
+  border-bottom 1px dashed #ccc
+
+.primary-nav.showMenu 
+  height 80vh
+  overflow-y auto
+  @media only screen and (min-width:0px) and (max-width:999px)
+    height 100vh
+
+.primary-nav li  
+  display none 
+  
+.primary-nav.showMenu li 
+  display block 
+  
+.primary-nav.showMenu a 
+  // display inline-block
+  // padding 15px 8px 
+  // border-bottom 1px solid #D1D1D1 
+  // color #666666 
+  // font-weight 700 
+  
+.primary-nav lilast-child a 
+  border-bottom none 
+  
+.nav-slide 
+  position relative 
+  top 0 
+  border-top 4px solid #fff 
+  -webkit-box-shadow 0px 5px 4px 0px #000
+  box-shadow 0px 5px 4px 0px #000
+  z-index 10
+
+.nav-slide a 
+  display block 
+  width 80px 
+  position relative 
+  right 10px
+  padding 2px 0 8px 0 
+  float right
+  text-align center
+  color #333
+  font-weight 700
+  border-radius 0 0 6px 6px
+  -webkit-box-shadow 0px 5px 4px 0px #000
+  box-shadow 0px 5px 4px 0px #000
+
+.nav-slide a.active 
+   background-position center -24px 
+
+.showMenu 
+  // 
+  
+
+// adjust for bp + add x
+.nav-burger
+  position fixed 
+  right 20px
+  top 20px 
+  width 50px
+  height 21px
+  z-index 1000
+  background transparent url(/static/Homepage/ru-menu-icon@2x.svg) center center no-repeat
+
+
+
+.menu-links
+  margin 0
+  padding 0
+  // display none
+
+
+
+.menu-links
+  display block
+  margin 0
+  position relative
+  // font-family 'Cabin', sans-serif
+  font-family 'Circular Std'
+  font-size 32px
+  vertical-align baseline
+  .mini-nav-lnk
+    font-size 12px
+    font-family 'Cabin', sans-serif
+  .pipe
+    font-size 16px 
+    color #ccc
+    font-family arial
+    font-weight 100
+  .first-mini
+    margin-left 20px
+  li 
+    // height 80px
+    
     position relative
-    li 
-      width 16.6666%
-      float left 
-      // height 80px
-      border-bottom 4px solid rgba(168, 172, 177, .3)
-      position relative
-      a 
-        display block 
-        text-align center
-        white-space nowrap
-        text-decoration none
-        color #777A81
-        padding 30px 5px
-        -webkit-transition all 250ms linear
-        -moz-transition all 250ms linear
-        transition all 250ms linear
-        transition-property #ffffff,#FF3347
-      a:hover 
-        color #FF3347 
-      a.active
-        // color blue !important
-    li::after
-      position absolute 
-      width 1px 
-      height 50px 
-      right 0px 
-      top 14px
-      background rgba(168, 172, 177, .3)
-      content ""
-    li:last-of-type::after
-      display none
-    li.active 
-      border-bottom 4px solid #ff3347
+    
+    a 
+      display inline-block 
+      text-align center
+      white-space nowrap
+      text-decoration none
+      color black
       -webkit-transition all 250ms linear
       -moz-transition all 250ms linear
       transition all 250ms linear
-      transition-property 1,#FF3347
-      a
-        color #ff3347
+      transition-property #ffffff,#000000
+      // border-bottom 4px solid transparent
+    a:hover 
+      opacity .8
+    a.active
+      // color blue !important
+  li::after
+    // position absolute 
+    // width 1px 
+    // height 50px 
+    // right 0px 
+    // top 14px
+    // background rgba(168, 172, 177, .3)
+    // content ""
+  li:last-of-type::after
+    // display none
+  li.active 
+    
+    -webkit-transition all 250ms linear
+    -moz-transition all 250ms linear
+    transition all 250ms linear
+    transition-property 1,#000000
+    
+    a
+      color #000000
+      // border-bottom 4px solid #000000
+  
+@media only screen and (min-width:0px) and (max-width:579px)
+  .menu-links
+    padding 100px 40px 0 40px
+
+@media only screen and (min-width:580px) and (max-width:999px)
+  .menu-links
+    width 420px 
+    margin 0 auto
+    font-size 48px
+    padding-top 145px
+    .mini-nav-lnk
+      font-size 24px
+    .pipe
+      font-size 30px 
+    li 
+      padding-bottom 20px
+
+
+@media only screen and (min-width:1000px)
+  .menu-links
+    width 500px 
+    // margin 0 auto
+    font-size 56px
+    padding-top 145px
+    .mini-nav-lnk
+      font-size 32px
+    .pipe
+      font-size 38px 
+    li 
+      padding-bottom 20px
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FIXED GLOBALS
+
+.logo 
+  position fixed 
+  background transparent url('/static/Homepage/ru-logo@1x.svg') center top no-repeat
+  background-size contain
+  z-index 1000
+  color white 
+  text-indent -9999px
+  left 50%
+  transform translateX(-50%)
+  
+  @media only screen and (min-width:0px) and (max-width:579px)
+    width 178px
+    height 26px
+    top 20px
+  
+  @media only screen and (min-width:580px) and (max-width:799px)
+    width 308px
+    height 46px 
+    top 30px
+
+  @media only screen and (min-width:800px)
+    width 550px
+    height 80px 
+    top 45px
+    
+
+
+
+
+
 
 
 
@@ -437,30 +615,30 @@ input
 
 
 
-@media only screen and (min-width:580px) and (max-width:799px)
-  .header
-    height 40px
-  .header__logo
-    width 16px
-    height 22px
-    background-position center center
-    background-size 16px 22px
-    margin-top -11px 
-    margin-left -8px
+// @media only screen and (min-width:580px) and (max-width:799px)
+//   .header
+//     height 40px
+//   .header__logo
+//     width 16px
+//     height 22px
+//     background-position center center
+//     background-size 16px 22px
+//     margin-top -11px 
+//     margin-left -8px
 
-@media only screen and (min-width:800px)
-  .header
-    height 60px
-  .header__logo
-    width 122px
-    height 36px    
-    margin-top -18px 
-    margin-left -61px
-    // background url('/static/desk-top-logo.png') no-repeat center center
-    background-size 122px 36px
+// @media only screen and (min-width:800px)
+//   .header
+//     height 60px
+//   .header__logo
+//     width 122px
+//     height 36px    
+//     margin-top -18px 
+//     margin-left -61px
+
+//     background-size 122px 36px
     
-  .animate-slide 
-    display none !important
+//   .animate-slide 
+//     display none !important
 
 
 
@@ -607,11 +785,11 @@ input
 /* DESKTOP */
 @media only screen and (min-width:800px) 
 
-  .main__cont 
-    margin 80px auto
-    max-width 540px
-    .main__head
-      margin-bottom 30px
+  // .main__cont 
+  //   margin 80px auto
+  //   max-width 540px
+  //   .main__head
+  //     margin-bottom 30px
 
 
 
@@ -883,117 +1061,6 @@ input
     
   .slide3
     background #ccc
-
-// NAV
-
-.nav 
-  position fixed
-  top 0
-  left 0
-  width 100%
-  z-index 10
-  // height 80vh
-  // @media only screen and (min-width:0px) and (max-width:579px)
-  //   height 100vh
-
-
-.primary-nav 
-  width 100%
-  background #fff
-  height 0
-  transition all 0.25s linear
-  border 1px solid black
-
-
-.primary-nav.showMenu 
-  height 80vh
-  @media only screen and (min-width:0px) and (max-width:579px)
-    height 100vh
-
-.primary-nav li  
-  display none 
-  
-.primary-nav.showMenu li 
-  display initial 
-  
-.primary-nav.showMenu a 
-  display block 
-  padding 15px 8px 
-  border-bottom 1px solid #D1D1D1 
-  color #666666 
-  font-weight 700 
-  
-.primary-nav lilast-child a 
-  border-bottom none 
-  
-.nav-slide 
-  position relative 
-  top 0 
-  border-top 4px solid #fff 
-  -webkit-box-shadow 0px 5px 4px 0px #000
-  box-shadow 0px 5px 4px 0px #000
-  z-index 10
-
-.nav-slide a 
-  display block 
-  width 80px 
-  position relative 
-  right 10px
-  padding 2px 0 8px 0 
-  float right
-  text-align center
-  color #333
-  font-weight 700
-  border-radius 0 0 6px 6px
-  -webkit-box-shadow 0px 5px 4px 0px #000
-  box-shadow 0px 5px 4px 0px #000
-
-.nav-slide a.active 
-   background-position center -24px 
-
-.showMenu 
-  // 
-  
-
-// adjust for bp + add x
-.nav-burger
-  position fixed 
-  right 20px
-  top 20px 
-  width 50px
-  height 21px
-  z-index 1000
-  background transparent url(/static/Homepage/ru-menu-icon@2x.svg) center center no-repeat
-
-
-
-
-// FIXED GLOBALS
-
-.logo 
-  position fixed 
-  background transparent url('/static/Homepage/ru-logo@1x.svg') center top no-repeat
-  background-size contain
-  z-index 1000
-  left 50%
-  transform translateX(-50%)
-  
-  @media only screen and (min-width:0px) and (max-width:579px)
-    width 178px
-    height 26px
-    top 20px
-  
-  @media only screen and (min-width:580px) and (max-width:799px)
-    width 308px
-    height 46px 
-    top 30px
-
-  @media only screen and (min-width:800px)
-    width 550px
-    height 80px 
-    top 45px
-    
-
 
 
 
