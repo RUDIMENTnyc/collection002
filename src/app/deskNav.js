@@ -6,6 +6,15 @@ function deskNavController($log, $scope, $location) {
   $scope.getClass = function (path) {
     return ($location.path().substr(0, path.length) === path) ? 'active' : '';
   };
+  $scope.closeNav = function () {
+    // showMenu = !showMenu
+    $log.info('close nav');
+
+    angular.element(document.querySelector('.primary-nav')).removeClass('showMenu');
+    // if ('angular.element(document.querySelector('.primary-nav')).hasClass('showMenu');') {
+    //   angular.element(document.querySelector('.primary-nav')).removeClass('showMenu');
+    // }   
+  };
 }
 
 module.exports = {

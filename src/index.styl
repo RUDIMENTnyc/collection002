@@ -161,6 +161,24 @@ body
   -webkit-font-smoothing antialiased !important
   outline none !important
 
+
+h1,h2,h3,h4,h5,h6
+  margin 0
+
+
+h1 
+  font-size 32px
+  // font-family 'Circular Std'
+  font-family 'Circular Std'
+  font-weight 200
+  @media only screen and (min-width:580px) and (max-width:799px) 
+    font-size 48px
+  @media only screen and (min-width:800px) 
+    font-size 56px
+  
+
+
+
 input
   &:invalid
     box-shadow none
@@ -182,32 +200,7 @@ input
 
 
 
-.active 
-  // color red !important
 
-.hero
-  height 400px
-  position relative
-  // border 1px dashed #eee
-  .map-test 
-    position absolute
-    // background transparent url('/static/fpo-map.jpg') 0 0 no-repeat 
-    width 2177px
-    height 400px
-    left 50%
-    margin-left -1088px
-  .marker-test
-    position absolute
-    width 40px
-    height 40px
-    left 50%
-    margin-left -20px
-    top 190px
-    background red 
-    border-radius 50%
-    display block
-    &:hover 
-      opacity .5
 
 /* ==========================  */
 
@@ -216,10 +209,6 @@ input
 /* ==========================  */
 
 
-
-
-
-// NAV
 
 .nav 
   position fixed
@@ -370,7 +359,9 @@ input
   
 @media only screen and (min-width:0px) and (max-width:579px)
   .menu-links
-    padding 100px 40px 0 40px
+    padding 100px 0 0 0
+    width 250px
+    margin 0 auto
 
 @media only screen and (min-width:580px) and (max-width:999px)
   .menu-links
@@ -615,90 +606,11 @@ input
 
 
 
-// @media only screen and (min-width:580px) and (max-width:799px)
-//   .header
-//     height 40px
-//   .header__logo
-//     width 16px
-//     height 22px
-//     background-position center center
-//     background-size 16px 22px
-//     margin-top -11px 
-//     margin-left -8px
-
-// @media only screen and (min-width:800px)
-//   .header
-//     height 60px
-//   .header__logo
-//     width 122px
-//     height 36px    
-//     margin-top -18px 
-//     margin-left -61px
-
-//     background-size 122px 36px
-    
-//   .animate-slide 
-//     display none !important
 
 
 
 
 
-/* ==========================  */
-
-/* HERO                        */
-
-/* ==========================  */
-
-.hero 
-  background-color black
-  position relative
-  background no-repeat center center
-  background-size cover
-
-.home-hero
-  // 
-
-.map-hero 
-  // 
-
-
-/* MOBILE */
-@media only screen and (min-width:0px) and (max-width:579px) 
-  .hero 
-    height 220px
-    background-position center center
-    
-  .home-hero
-    // background-image url(/static/home-header-fpo.jpg)
-
-
-/* TABLET */
-@media only screen and (min-width:580px) and (max-width:799px) 
-  .hero 
-    height 500px
-    background-position center center
-    
-  .home-hero
-    // background-image url(/static/home-header-fpo.jpg)
-
-/* DESKTOP */
-@media only screen and (min-width:800px) 
-  .hero 
-    height 500px
-    background-position center center
-    
-  .home-hero
-    // background-image url(/static/home-header-fpo.jpg)
-
-
-
-
-
-
-
-
-
 
 
 
@@ -708,31 +620,6 @@ input
 
 
 
-// fpo
-.map-hero
-  height 420px
-  position relative
-  // border 1px dashed #eee
-  .map-test 
-    position absolute
-    background transparent url('/static/map-fpo.png') 0 0 no-repeat 
-    width 1440px
-    height 420px
-    left 50%
-    margin-left -700px
-    background-size 1400px 420px
-  .marker-pin
-    position absolute
-    width 23px
-    height 32px
-    left 50%
-    margin-left -12px
-    top 190px
-    background transparent url('/static/map-pin.png') 0 0 no-repeat 
-    background-size contain
-    display block
-    &:hover 
-      opacity .8
 
 
 
@@ -741,94 +628,54 @@ input
 
 
 
-
-
-
-
-
-.content-example
-  text-align center 
-  padding 100px 20px 100px
-
-
-.form-tester
-  outline 1px dashed #ccc !important
-  max-width 400px 
-  margin 40px auto
-  padding 20px
-
-
-/* ==========================  */
-
-/* CONTENT                     */
-
-/* ==========================  */
-
-.main__cont 
-  margin 25px 20px
-  text-align center
-  .main__head
-    margin-bottom 10px 
-  .date__head
-    margin-bottom 15px
-  .main__txt
-    p
-      margin-bottom 1em
-
-  .social-lnk
-    font-family brandon-grotesque, san-serif
-    font-weight bold
-    font-size 14px
-    letter-spacing 1px
-
-
-/* DESKTOP */
-@media only screen and (min-width:800px) 
-
-  // .main__cont 
-  //   margin 80px auto
-  //   max-width 540px
-  //   .main__head
-  //     margin-bottom 30px
-
-
-
 /* ==========================  */
 
-/* HOME HERO 2                 */
+/* HERO                        */
 
 /* ==========================  */
 
-.home-hero2
-  background-color black
+.hero 
   position relative
   background no-repeat center center
   background-size cover
 
 
+.coll001-hero
+  background-image url('/static/coll001/ru-001-header@2x.jpg')
+  
+.coll002-hero
+  background-image url('/static/coll002/ru-002-header@2x.jpg')
+
+.brand-hero
+  background-image url('/static/Brand/ru-brand-header@2x.jpg')
+
+.objets-hero
+  background-image url('/static/objets/ru-objets-trouves-header@2x.jpg')
+
+
 /* MOBILE */
 @media only screen and (min-width:0px) and (max-width:579px) 
-  .home-hero2
-    height 220px
+  .hero 
+    height 100vh
     background-position center center
-    background-image url(/static/home-hero2.jpg)
+    
+
 
 
 /* TABLET */
 @media only screen and (min-width:580px) and (max-width:799px) 
-  .home-hero2 
-    height 500px
+  .hero 
+    height 512px
     background-position center center
-    background-image url(/static/home-hero2.jpg)
     
+
+
 /* DESKTOP */
 @media only screen and (min-width:800px) 
-  .home-hero2
-    height 700px
+  .hero 
+    height 960px
     background-position center center
-    background-image url(/static/home-hero2.jpg)
-
-        
+    
 
 
 
@@ -836,52 +683,21 @@ input
 
 
 
-/* ==========================  */
-
-/* FOOTER                      */
-
-/* ==========================  */
 
 
 
 
-.footer-look
-  padding 40px 20px  
-  .btn 
-    margin-top 30px
 
 
-.footer
-  color #fff
-  text-align center
-  height auto
-  position relative
-  a
-    color #fff
-
-.footer__copy
-  width 100%
-  padding 36px 23px
-  font-size 12px !important
-  line-height 16px !important
-
-.footer__logo
-  height 47px
-  width 160px
-  background-image url(/static/footer-logo.png )
-  background-size 100% auto
-  background-repeat no-repeat
-  padding 10px
-  background-position center center
-  display block
-  margin 0 auto 21px
 
 
-@media only screen and (min-width:1400px)
-  footer 
-    width 100%
-    position absolute
-    bottom 0px
+
+
+
+
+
+
+
 
 
 
