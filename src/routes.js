@@ -21,9 +21,19 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       component: 'collection002'
     })
 
+    .state('collection002story', {
+      url: '/collection002-story',
+      component: 'collection002story'
+    })
+
     .state('collection001', {
       url: '/collection001',
       component: 'collection001'
+    })
+
+    .state('collection001story', {
+      url: '/collection001-story',
+      component: 'collection001story'
     })
 
     .state('objets', {
