@@ -167,14 +167,16 @@ h1,h2,h3,h4,h5,h6
 
 
 h1 
-  font-size 32px
+  font-size 16px
   // font-family 'Circular Std'
   font-family 'Circular Std'
+  font-family 'Cabin', sans-serif
+  font-family 'Circular Std Book'
   font-weight 200
   @media only screen and (min-width:580px) and (max-width:799px) 
-    font-size 48px
+    font-size 24    px
   @media only screen and (min-width:800px) 
-    font-size 56px
+    font-size 32px
   
 
 
@@ -764,6 +766,41 @@ input
 
 
 
+.sec-head
+
+  @media only screen and (min-width:0px) and (max-width:579px) 
+    padding 40px 40px 10px 40px
+
+
+  @media only screen and (min-width:580px) and (max-width:999px) 
+    padding 40px 64px 10px 64px
+
+  @media only screen and (min-width:1000px) 
+    padding 100px 130px 10px 130px
+    margin 0 auto
+    max-width 1440px
+
+
+
+
+
+
+.sec-temp
+  outline 1px dashed #ccc !important
+
+  @media only screen and (min-width:0px) and (max-width:579px) 
+    padding 0px 40px 0px 40px
+
+
+  @media only screen and (min-width:580px) and (max-width:999px) 
+    padding 0px 64px 0px 64px
+
+  @media only screen and (min-width:1000px) 
+    padding 0px 130px 0px 130px
+    margin 0 auto
+    max-width 1440px
+
+// BRAND
 
 
 
@@ -789,99 +826,6 @@ input
 
 
 
-
-
-
-
-
-#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
-  width: 30px;
-  height: 35px;
-  position: relative;
-  margin: 0px auto;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: black;
-  border-radius: 0px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-}
-
-
-
-/* Icon 4 */
-
-#nav-icon4 {
-}
-
-#nav-icon4 span:nth-child(1) {
-  top: 0px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#nav-icon4 span:nth-child(2) {
-  top: 10px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#nav-icon4 span:nth-child(3) {
-  top: 20px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#nav-icon4.open span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 2px;
-  left: 4px;
-}
-
-#nav-icon4.open span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
-}
-
-#nav-icon4.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 24px;
-  left: 4px;
-}
 
 
 
@@ -901,17 +845,27 @@ input
 // Coll 002
 
 
+.coll002-head
+  // 
+
 .coll002-grid
+  // font-family 'Circular Std Book'
+  // padding-bottom 80px 
+
+.coll002-subhead
   // 
 
 
-
 @media only screen and (min-width:0px) and (max-width:579px) 
+
+  .coll002-head
+    padding 40px 40px 20px
+
   .coll002-grid
     margin 0 auto
     display flex
     flex-wrap wrap
-    padding 4px
+    padding 4px 40px 70px
     .coll002-brick
       padding 4px 
       flex-grow 1
@@ -921,12 +875,12 @@ input
         height auto
      
 
-@media only screen and (min-width:580px) and (max-width:799px) 
+@media only screen and (min-width:580px) and (max-width:999px) 
   .coll002-grid
     margin 0 auto
     display flex
     flex-wrap wrap
-    padding 10px
+    padding 10px 60px 70px
     .coll002-brick
       padding 10px 
       flex-grow 1
@@ -934,15 +888,27 @@ input
       img 
         width 100%
         height auto
+        
+  .coll002-head
+    padding 40px 64px 20px
+    
+  .coll002-subhead
+    .left 
+      float left 
+    .right 
+      float right
+      text-align right
+      .details-lnk
+        display block
      
 
-@media only screen and (min-width:800px) 
+@media only screen and (min-width:1000px) 
   .coll002-grid
     margin 0 auto
-    max-width 1200px
+    max-width 1440px
     display flex
     flex-wrap wrap
-    padding 10px
+    padding 10px 130px 80px
     .coll002-brick
       padding 10px 
       flex-grow 1
@@ -958,10 +924,18 @@ input
       // outline 1px dotted red !important
 
 
+  .coll002-head
+    padding 100px 140px 80px
 
 
-
-
+  .coll002-subhead
+    .left 
+      float left 
+    .right 
+      float right
+      text-align right
+      .details-lnk
+        display block
 
 
 
