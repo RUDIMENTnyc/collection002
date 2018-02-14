@@ -311,11 +311,12 @@ input
   position relative
   // font-family 'Cabin', sans-serif
   font-family 'Circular Std'
+  font-family 'Circular Std Book'
   font-size 32px
   vertical-align baseline
   .mini-nav-lnk
     font-size 12px
-    font-family 'Cabin', sans-serif
+    // font-family 'Cabin', sans-serif
   .pipe
     font-size 16px 
     color #ccc
@@ -381,7 +382,7 @@ input
     .pipe
       font-size 30px 
     li 
-      padding-bottom 20px
+      padding-bottom 15px
 
 
 @media only screen and (min-width:1100px)
@@ -459,12 +460,12 @@ input
     height 26px
     top 20px
   
-  @media only screen and (min-width:580px) and (max-width:799px)
+  @media only screen and (min-width:580px) and (max-width:1099px)
     width 308px
     height 46px 
     top 30px
 
-  @media only screen and (min-width:800px)
+  @media only screen and (min-width:1100px)
     width 550px
     height 80px 
     top 45px
@@ -881,6 +882,81 @@ input
   top: 24px;
   left: 4px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Coll 002
+
+
+.coll002-grid
+  // 
+
+
+
+@media only screen and (min-width:0px) and (max-width:579px) 
+  .coll002-grid
+    margin 0 auto
+    display flex
+    flex-wrap wrap
+    padding 4px
+    .coll002-brick
+      padding 4px 
+      flex-grow 1
+      width 50%
+      img 
+        width 100%
+        height auto
+     
+
+@media only screen and (min-width:580px) and (max-width:799px) 
+  .coll002-grid
+    margin 0 auto
+    display flex
+    flex-wrap wrap
+    padding 10px
+    .coll002-brick
+      padding 10px 
+      flex-grow 1
+      width 25%
+      img 
+        width 100%
+        height auto
+     
+
+@media only screen and (min-width:800px) 
+  .coll002-grid
+    margin 0 auto
+    max-width 1200px
+    display flex
+    flex-wrap wrap
+    padding 10px
+    .coll002-brick
+      padding 10px 
+      flex-grow 1
+      width 16.6666%
+      img 
+        width 100%
+        height auto
+    .coll002-brick:nth-child(7),
+    .coll002-brick:nth-child(8),
+    .coll002-brick:nth-child(9),
+    .coll002-brick:nth-child(10)
+      width 25%
+      // outline 1px dotted red !important
+
 
 
 
