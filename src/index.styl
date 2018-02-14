@@ -150,9 +150,19 @@ html,body
 *
   box-sizing border-box
   
+ // font-family 'Circular Std'
+ // font-weight 100
+
 
 body 
-   font-family 'Circular Std'
+  font-family 'Cabin', sans-serif
+  line-height 1.7em
+  @media only screen and (min-width:0px) and (max-width:579px)
+    font-size 12px
+  @media only screen and (min-width:580px) and (max-width:799px) 
+    font-size 16px
+  @media only screen and (min-width:1000px) 
+    font-size 20px
 
 .main-container 
   // padding-bottom 10px
@@ -170,9 +180,11 @@ h1
   font-size 16px
   // font-family 'Circular Std'
   font-family 'Circular Std'
-  font-family 'Cabin', sans-serif
+  
   font-family 'Circular Std Book'
-  font-weight 200
+  font-family 'Cabin', sans-serif
+  font-weight 700
+
   @media only screen and (min-width:580px) and (max-width:799px) 
     font-size 24    px
   @media only screen and (min-width:800px) 
@@ -478,12 +490,12 @@ input
   position fixed 
   top 50%
   transform translateY(-50%)
-  left 10px 
+  left 0px 
   text-align center
   transform rotate(-90deg)
-  font-family 'Circular Std'
-  font-size 12px
-
+  // font-family 'Circular Std'
+  font-size 14px
+  line-height 1em 
   
 
 .tfixed2
@@ -491,11 +503,12 @@ input
   position fixed 
   top 50%
   transform translateY(-50%)
-  right 0px
+  right -28px
   text-align center
   transform rotate(90deg)
-  font-family 'Circular Std'
-  font-size 12px
+  // font-family 'Circular Std'
+  font-size 14px
+  line-height 1em
   
 @media only screen and (min-width:0px) and (max-width:579px)
   .tfixed1,
