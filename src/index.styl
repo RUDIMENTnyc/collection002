@@ -970,6 +970,7 @@ input
   img 
     width 100%
     height auto
+    display block
 
 .coll-mod-type1a
   position relative
@@ -985,17 +986,35 @@ input
     img 
       margin-bottom 10px 
       
+    .type-detail
+      padding-bottom 100px
+      
+    .coll-mod-type2a > div,
     .coll-mod-type1a > div 
       transform none !important
       
     .coll-mod-type1a
       padding-bottom 40px
       padding-top 50px
+      
+    .coll-mod-type2a
+      padding-bottom 40px
+      .type2a-left
+        float left 
+        width calc(50% - 4px)
+      .type2a-right
+        float right 
+        width calc(50% - 4px)
+
 
 @media only screen and (min-width:580px) and (max-width:999px) 
 
   .coll002-temp
     
+    .type-detail
+      padding-bottom 100px
+    
+    .coll-mod-type2a > div,
     .coll-mod-type1a > div 
       transform none !important 
     
@@ -1013,6 +1032,24 @@ input
         margin-left 9px
         img
           margin-bottom -50px
+          
+    .coll-mod-type2a
+      position relative
+      padding-bottom 50px
+      .type2a-left
+        display block
+        margin 0 auto 
+        width 40%
+      .type2a-top
+        position absolute 
+        width 140px
+        left 0px
+        bottom 30%
+      .type2a-right
+        position absolute  
+        width 140px
+        right 0px
+        bottom 50px
 
 
 
@@ -1020,6 +1057,7 @@ input
 
   .type-detail
     padding-top 20px
+    padding-bottom 200px
 
 
   .coll002-temp
@@ -1041,6 +1079,47 @@ input
       margin-left 9px
       img
         margin-bottom -50px
+
+  .coll-mod-type2a
+    position relative
+    padding-bottom 0px
+    padding-top 100px
+    .type2a-left
+      display block
+      margin 0 auto 
+      width 40%
+      z-index 1
+    .type2a-top
+      position absolute 
+      width 280px
+      width 25%
+      left 0px
+      bottom 30%
+      z-index 0
+    .type2a-right
+      position absolute  
+      width 25%
+      right 0px
+      bottom 0px
+      z-index 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
