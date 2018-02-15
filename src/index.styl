@@ -194,6 +194,10 @@ p
   margin 0 0 .85em 0
 
 
+.sig 
+  font-size 10px
+  line-height 1.5em
+
 input
   &:invalid
     box-shadow none
@@ -205,13 +209,19 @@ input
   text-indent -9999px
 
 
-@media only screen and (min-width:580px) and (max-width:799px) 
+@media only screen and (min-width:580px) and (max-width:999px) 
   .h-r1
     font-size 56px
+  
+  .sig 
+    font-size 12px
 
-@media only screen and (min-width:800px) 
+@media only screen and (min-width:1000px) 
   .h-r1
     font-size 64px
+    
+  .sig 
+    font-size 14px
 
 
 
@@ -1080,6 +1090,9 @@ input
       img
         margin-bottom -50px
 
+  .story-txt-2
+    max-width 77    0px
+    margin 0 auto
   .coll-mod-type2a
     position relative
     padding-bottom 0px
@@ -1104,7 +1117,7 @@ input
       z-index 0
 
 
-
+  
 
 
 
