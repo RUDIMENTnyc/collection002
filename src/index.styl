@@ -963,15 +963,82 @@ input
 
 
 
+// COLL 02 story
+
+.coll002-temp
+  img 
+    width 100%
+    height auto
+
+.coll-mod-type1a
+  position relative
+  
 
 
 
+@media only screen and (min-width:0px) and (max-width:579px) 
+
+  .coll002-temp
+    img 
+      margin-bottom 10px 
+      
+    .coll-mod-type1a > div 
+      transform none !important
+
+@media only screen and (min-width:580px) and (max-width:999px) 
+
+  .coll002-temp
+    // 
+    
+    .coll-mod-type1a
+      .type1a-left    
+        display inline-block 
+        width calc(50% - 12px)
+        margin-right 10px
+
+      .type1a-right  
+        display inline-block 
+        width calc(50% - 12px)    
+        margin-left 9px
 
 
 
+@media only screen and (min-width:1000px) 
 
 
+  .coll002-temp
+    
+    
+  .coll-mod-type1a
+    // -webkit-transform translateZ(-999px) scale(1)
+    // transform translateZ(-999px) scale(1)
+    // z-index 3 
+    .type1a-left    
+      display inline-block 
+      width calc(50% - 12px)
+      margin-right 10px
+      // width 48%
+      // width 300px
+      // position absolute
+      // bottom 10px
+        
+      // -webkit-transform translateZ(0)
+      // transform translateZ(0)
+      // z-index 4
 
+    .type1a-right  
+      display inline-block 
+      width calc(50% - 12px)    
+      margin-left 9px
+      // width 48%
+      // width 300px
+      // position absolute
+      // bottom -50px
+      
+      // right 0px
+      // -webkit-transform translateZ(999px) scale(.5)
+      // transform translateZ(999px) scale(.7)
+      // z-index 1
 
 
 
@@ -1040,8 +1107,15 @@ input
 
 
 
+@media only screen and (min-width:0px) and (max-width:579px) 
+  // 
 
+@media only screen and (min-width:580px) and (max-width:999px) 
+  // 
 
+@media only screen and (min-width:1000px) 
+  // 
+  
 
 
 
