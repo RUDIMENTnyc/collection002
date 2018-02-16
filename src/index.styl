@@ -252,6 +252,8 @@ input
   height 0
   transition all 0.25s linear
   border-bottom 1px dashed #ccc
+  
+
 
 .primary-nav.showMenu 
   height 80vh
@@ -320,6 +322,108 @@ input
   height 21px
   z-index 1000
   background transparent url(/static/Homepage/ru-menu-icon@2x.svg) center center no-repeat
+  @media only screen and (min-width:0px) and (max-width:579px) 
+    width 30px 
+    height 30px 
+    background-size contain 
+    top 11px
+
+  @media only screen and (min-width:580px) and (max-width:999px) 
+    width 30px 
+    height 30px 
+    background-size contain 
+    top 21px 
+
+  @media only screen and (min-width:1000px) 
+    // 
+    
+
+
+
+.nav-hr
+  border 0
+  height 1px
+  background #dddddd
+  margin-top 20px 
+  margin-bottom 12px
+
+
+
+.nav-social
+  // border 1px dotted red 
+  text-align center
+  color #4A4A4A
+  font-size 8px
+  .social-links 
+    .soc-lnk 
+      width 26px
+      height 26px
+      display inline-block
+      margin-left 2px 
+      margin-right 2px
+      // border 1px solid red 
+      text-indent -9999px
+      background-size contain
+      background-repeat no-repeat 
+      background-position center center
+    .email
+      background-image url('/static/Homepage/Social/ru-mail@1x.svg')
+    .insta 
+      background-image url('/static/Homepage/Social/ru-ig@1x.svg')
+    .facebook 
+      background-image url('/static/Homepage/Social/ru-fb@1x.svg')
+    .twitter 
+      background-image url('/static/Homepage/Social/ru-tw@1x.svg')
+  span 
+    display block
+    padding-top 3px
+
+
+
+@media only screen and (min-width:0px) and (max-width:579px) 
+  .nav-social
+    padding-top 45px 
+    // position absolute
+    // left 0px 
+    // right 0px
+    // bottom 20px
+
+@media only screen and (min-width:580px) and (max-width:999px) 
+  .nav-social
+    position absolute
+    left 0px 
+    right 0px
+    bottom 20px 
+    .social-links 
+      .soc-lnk 
+        width 34px 
+        height 34px
+        margin-left 4px 
+        margin-right 4px
+    span 
+      font-size 12px
+      padding-top 10px 
+      padding-bottom 30px
+
+@media only screen and (min-width:1000px) 
+  .nav-social
+    position absolute
+    left 0px 
+    right 0px
+    bottom 20px 
+    .social-links 
+      .soc-lnk 
+        width 34px 
+        height 34px
+        margin-left 4px 
+        margin-right 4px
+    span 
+      font-size 12px
+      padding-top 10px 
+      padding-bottom 30px
+  
+
+
 
 
 
@@ -340,7 +444,7 @@ input
   vertical-align baseline
   .mini-nav-lnk
     font-size 12px
-    // font-family 'Cabin', sans-serif
+    font-family 'Cabin', sans-serif
   .pipe
     // font-size 16px 
     color #ccc
@@ -348,7 +452,7 @@ input
     font-weight 100
     display none
   .first-mini
-    margin-left 20px
+    margin-left 10px
   li 
     margin-bottom 10px 
     
@@ -463,6 +567,7 @@ input
     width 280px
     float left
     padding-top 240px   
+    font-size 14px
  
 
 
@@ -499,7 +604,7 @@ input
     
   
 .tfixed1
-  z-index 2
+  z-index 2000
   position fixed 
   top 50%
   transform translateY(-50%)
@@ -512,7 +617,7 @@ input
   
 
 .tfixed2
-  z-index 2
+  z-index 2000
   position fixed 
   top 50%
   transform translateY(-50%)
