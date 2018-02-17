@@ -638,7 +638,7 @@ input
   .tfixed2 
     display none
 
-@media only screen and (min-width:580px) and (max-width:799px)
+@media only screen and (min-width:580px) and (max-width:999px)
   
   .tfixed1,
   .tfixed2 
@@ -966,7 +966,7 @@ input
       height auto
 
 
-@media only screen and (min-width:0px) and (max-width:579px) 
+@media only screen and (min-width:0px) and (max-width:729px) 
   .brand-center
     padding-top 30px 
 
@@ -982,12 +982,13 @@ input
       font-size 10px 
       padding-top 10px
       padding-bottom 30px
+      max-width 250px
       
     .brand-img
       padding-bottom 40px
 
 
-@media only screen and (min-width:580px) and (max-width:999px) 
+@media only screen and (min-width:730px) and (max-width:999px) 
   .brand-center
     padding-top 50px
     padding-bottom 50px 
@@ -1022,11 +1023,78 @@ input
       float right
 
 @media only screen and (min-width:1000px) 
-  // 
-  
 
+  .brand-center
+    padding-top 80px
+    padding-bottom 80px 
+    position relative
+    
 
+    .brand-call
+      position relative
+      // border 1px solid red
+      float left 
+      width 40%
+      width calc(50% - 30px)
+      
+      p 
+        font-family Cabin 
+        font-weight bold 
+        font-size 34px
+        // padding-right 30%
+        
+      .brand-call-sub
+        position absolute
+        // top 50%
+        transform translateY(50%)
 
+    .call-foot
+      font-size 12px 
+      padding-top 10px
+      padding-bottom 30px
+      max-width 240px
+      
+    .brand-img
+      width 50%
+      float right
+    
+
+@media only screen and (min-width:1440px) 
+
+  .brand-center
+    padding-top 80px
+    padding-bottom 80px 
+    position relative
+    
+
+    .brand-call
+      position relative
+      // border 1px solid red
+      float left 
+      width 40%
+      width calc(50% - 30px)
+      
+      p 
+        font-family Cabin 
+        font-weight bold 
+        font-size 54px
+        line-height 1em
+        // padding-right 30%
+        
+      .brand-call-sub
+        position absolute
+        // top 50%
+        transform translateY(50%)
+
+    .call-foot
+      font-size 12px 
+      padding-top 10px
+      padding-bottom 30px
+      max-width 240px
+      
+    .brand-img
+      width 50%
+      float right
 
 
 
