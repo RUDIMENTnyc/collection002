@@ -2,7 +2,163 @@
   
   <div class="hero objets-hero"></div>
 
-  <h1>Objets Trouv&#233;s</h1>
+  <section class="sec-head">
+     <h1>Objets Trouv&#233;s / Found Objects</h1>
+  </section>
+
+   <section class="sec-temp objets-cont">
+    <p>All found materials incorporated into these pieces are hand selected and curated by the design team. The materials we select are often discarded, no longer appreciated, lost in time, void and forgotten. The creative recollection of this past gives birth to the new form and it’s overall meaning.</p>
+    
+    <p>All scraps from the neckline, sleeves, armholes and cutouts are curated and repurposed for the garment’s pocket treatments and garment embellishments. What was once unwanted becomes wanted.</p> 
+    
+    <p>This is our way of less is more.</p>
+  </section>
+
+
+  <section class="objet-mod1">
+    
+
+      <div class="slide-sync">
+        <div class="slider-for">
+
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-1@2x.jpg" draggable="false" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-2@2x.jpg" draggable="false" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-3@2x.jpg" draggable="false" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-4@2x.jpg" draggable="false" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-5@2x.jpg" draggable="false" />
+          </div>
+
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-6@2x.jpg" draggable="false" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-7@2x.jpg" draggable="false" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-8@2x.jpg" draggable="false" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-9@2x.jpg" draggable="false" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-10@2x.jpg" draggable="false" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-11@2x.jpg" draggable="false" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-12@2x.jpg" draggable="false" />
+          </div>
+
+        </div>
+
+
+
+
+        <div class="slider-nav">
+
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-1-th@2x.jpg" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-2-th@2x.jpg" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-3-th@2x.jpg" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-4-th@2x.jpg" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-5-th@2x.jpg" />
+          </div>
+
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-6-th@2x.jpg" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-7-th@2x.jpg" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-8-th@2x.jpg" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-9-th@2x.jpg" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-10-th@2x.jpg" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-11-th@2x.jpg" />
+          </div>
+          <div class="item">
+            <img src="/static/objets/Apron/ru-001-objets-trouves-apron-12-th@2x.jpg" />
+          </div>
+
+
+        </div>
+    </div>
+
+  </section>
+
+
+
+<p>x</p>
+<p>x</p>
+<p>x</p>
+<p>x</p>
+<p>x</p>
+<p>x</p>
+
   
 </div>
 
+
+
+<script type="text/javascript">
+ $(document).on('ready', function() {
+    
+     $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav',
+       autoplay: true
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true
+
+    });
+
+
+    // $(".single-item").slick({
+    //   dots: false,
+    //   infinite: true,
+    //   speed: 500,
+    
+    //   cssEase: 'linear',
+    //   slidesToScroll: 1,
+    //   autoplay: true,
+    //   autoplaySpeed: 2000,
+    // });
+        
+
+    // console.log( "ready!" );
+
+});
+</script>

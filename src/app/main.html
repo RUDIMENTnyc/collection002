@@ -15,4 +15,29 @@
   
 </div>
 
-<!-- <grass-footer></grass-footer> -->
+<script type="text/javascript">
+ $(document).on('ready', function() {
+    
+    $(".single-item").slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+  
+      cssEase: 'linear',
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+    // console.log( "ready!" );
+
+
+
+    // $('.my-paroller').paroller();
+
+    // $("#my-element").paroller({ factor: '0.5', type: 'foreground', direction: 'vertical' });
+    // $("#my-element2").paroller({ factor: '0.5', type: 'foreground', direction: 'vertical' });
+
+
+});
+</script>
+
