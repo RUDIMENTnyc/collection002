@@ -1246,6 +1246,20 @@ input
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // COLL 02 story
 
 .coll002-temp
@@ -1254,6 +1268,8 @@ input
     height auto
     display block
 
+.coll-mod-type4a,
+.coll-mod-type3a
 .coll-mod-type1a
   position relative
   
@@ -1271,11 +1287,16 @@ input
     .type-detail
       padding-bottom 100px
       
+    .coll-mod-type5a > div,
+    .coll-mod-type4a > div,
+    .coll-mod-type3a > div,
     .coll-mod-type2a > div,
     .coll-mod-type1a > div 
-      // transform none !important
+      transform none !important
       
-    .coll-mod-type1a
+    .coll-mod-type1a,
+    .coll-mod-type4a,
+    .coll-mod-type3a
       padding-bottom 40px
       padding-top 50px
       
@@ -1287,6 +1308,15 @@ input
       .type2a-right
         float right 
         width calc(50% - 4px)
+        
+    .coll-mod-type5a
+      padding-bottom 40px
+      .type5a-left
+        float left 
+        width calc(50% - 4px)
+      .type5a-right
+        float right 
+        width calc(50% - 4px)
 
 
 @media only screen and (min-width:580px) and (max-width:999px) 
@@ -1296,24 +1326,50 @@ input
     .type-detail
       padding-bottom 100px
     
+    .coll-mod-type5a > div,
+    .coll-mod-type4a > div,
+    .coll-mod-type3a > div,
     .coll-mod-type2a > div,
     .coll-mod-type1a > div 
-      // transform none !important 
+      transform none !important 
     
-    .coll-mod-type1a
+    .coll-mod-type1a,
+    .coll-mod-type3a
       padding-bottom 90px
       padding-top 50px
-      .type1a-left    
+      .type1a-left,
+      .type3a-left      
         display inline-block 
         width calc(50% - 12px)
         margin-right 10px
 
-      .type1a-right  
+      .type1a-right,
+      .type3a-right   
         display inline-block 
         width calc(50% - 12px)    
         margin-left 9px
         img
           margin-bottom -50px
+          
+      .type3a-right  
+        img 
+          margin-bottom 0px
+          
+      .coll-mod-type4a
+        padding-bottom 90px
+        padding-top 50px
+        .type4a-left      
+          display inline-block 
+          width calc(50% - 12px)
+          margin-right 10px
+          img
+            margin-bottom -50px
+
+        .type4a-right   
+          display inline-block 
+          width calc(50% - 12px)    
+          margin-left 9px
+          
           
     .coll-mod-type2a
       position relative
@@ -1328,6 +1384,24 @@ input
         left 0px
         bottom 30%
       .type2a-right
+        position absolute  
+        width 140px
+        right 0px
+        bottom 50px
+        
+    .coll-mod-type5a
+      position relative
+      padding-bottom 50px
+      .type5a-left
+        display block
+        margin 0 auto 
+        width 40%
+      .type5a-top
+        position absolute 
+        width 140px
+        left 0px
+        bottom 30%
+      .type5a-right
         position absolute  
         width 140px
         right 0px
@@ -1361,10 +1435,41 @@ input
       margin-left 9px
       img
         margin-bottom -50px
+        
+  .coll-mod-type3a
+    padding-bottom 100px
+    padding-top 200px
+    .type3a-left    
+      display inline-block 
+      width calc(50% - 12px)
+      margin-right 10px
+
+    .type3a-right  
+      display inline-block 
+      width calc(50% - 12px)    
+      margin-left 9px
+      img
+        // margin-bottom -50px
+          
+  .coll-mod-type4a
+    padding-bottom 0px
+    padding-top 190px
+    .type4a-left      
+      display inline-block 
+      width calc(50% - 12px)
+      margin-right 10px
+      img
+        margin-bottom -50px
+    .type4a-right   
+      display inline-block 
+      width calc(50% - 12px)    
+      margin-left 9px
+
 
   .story-txt-2
     max-width 770px
     margin 0 auto
+    
   .coll-mod-type2a
     position relative
     padding-bottom 0px
@@ -1388,6 +1493,30 @@ input
       bottom -100px
       z-index 0
 
+  .coll-mod-type5a
+    position relative
+    padding-bottom 300px
+    padding-top 300px
+    .type5a-left
+      display block
+      margin 0 auto 
+      width 30%
+      z-index 1
+      img
+        margin-bottom -200px
+    .type5a-top
+      position absolute 
+      width 280px
+      width 45%
+      left 0px
+      bottom 100px
+      z-index 0
+    .type5a-right
+      position absolute  
+      width 25%
+      right 0px
+      bottom 100px
+      z-index 0
 
   
 
