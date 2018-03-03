@@ -1264,6 +1264,7 @@ input
 
 .coll002-temp
   overflow-x hidden
+  padding-bottom 100px
   img 
     width 100%
     height auto
@@ -1312,6 +1313,9 @@ input
     .coll-mod-type2a > div,
     .coll-mod-type1a > div 
       transform none !important
+      transition none !important
+      animation none !important
+      will-change auto !important
       
     .coll-mod-type1a,
     .coll-mod-type4a,
@@ -1323,12 +1327,16 @@ input
       
     .coll-mod-type2a
       padding-bottom 40px
+      padding-bottom 87%
       .type2a-left
         float left 
         width calc(50% - 4px)
       .type2a-right
         float right 
         width calc(50% - 4px)
+        
+    .coll-mod-type4a
+      padding-top 0
         
     .coll-mod-type5a
       padding-bottom 270px
@@ -1339,8 +1347,12 @@ input
         float right 
         width calc(50% - 4px)
         
+    .coll-mod-type6a
+      padding-top 0
+
     .coll-mod-type7a
       padding-bottom 40px
+      padding-bottom 87%
       .type7a-left
         float left 
         width calc(50% - 4px)
@@ -1359,7 +1371,17 @@ input
         flex-grow 1
         width 33.3333%
         
+    .coll-mod-type3a
+      .type3a-left
+        float left 
+        margin-left -40px
+        
+      .type3a-right
+        float right 
+        margin-right -40px
+        
     .coll-mod-type8b
+      padding-bottom 40px
       .type8b-left
         float left 
         margin-left -40px
@@ -1368,6 +1390,9 @@ input
         float right 
         margin-right -40px
         
+    .coll-mod-type9a
+      padding-top 0px
+
 
     .coll-mod-type10a
       margin 0 auto 100px
@@ -1380,14 +1405,20 @@ input
         flex-grow 1
         width 33.3333%
       
+    .coll-mod-type12a
+      padding-top 0
+
 
 
 @media only screen and (min-width:580px) and (max-width:999px) 
 
   .coll002-temp
+    padding-top 60px
+    padding-bottom 100px
     
     .type-detail
       padding-bottom 100px
+      font-size 12px
     
     .coll-mod-type12a > div,
     .coll-mod-type11a > div,
@@ -1401,8 +1432,14 @@ input
     .coll-mod-type3a > div,
     .coll-mod-type2a > div,
     .coll-mod-type1a > div 
-      transform none !important 
+      transform none !important
+      transition none !important
+      animation none !important
+      will-change auto !important
     
+    .story-txt-1
+      line-height 1.4em
+      padding-bottom 40px
 
     .coll-mod-type1a,
     .coll-mod-type3a
@@ -1473,6 +1510,24 @@ input
         right 0px
         bottom 50px
         
+    .coll-mod-type3a
+      margin-top 0px
+      padding-bottom 50px
+      .type3a-left
+        float left 
+        width 52%
+        width calc(50% + 40px)
+        margin-left -65px
+        
+      .type3a-right
+        float right 
+        width 52%
+        width calc(50% + 40px)
+        margin-right -65px
+        
+    .coll-mod-type4a
+      padding-top 0    
+
     .coll-mod-type5a
       position relative
       padding-bottom 50px
@@ -1491,23 +1546,27 @@ input
         right 0px
         bottom 50px
         
+    .coll-mod-type6a
+      padding-top 0    
+
+        
     .coll-mod-type7a
       position relative
       padding-bottom 50px
       .type7a-left
         display block
         margin 0 auto 
-        width 30%
+        width 40%
       .type7a-top
         position absolute 
         width 20%
         left 0px
-        bottom 100px
+        bottom 32%
       .type7a-right
         position absolute  
         width 20%
         right 0px
-        bottom 100px
+        bottom 32%
         
 
     .coll-mod-type8a
@@ -1528,7 +1587,8 @@ input
 
 
     .coll-mod-type8b
-      margin-top 160px
+      margin-top 150px
+      padding-bottom 50px
       .type8b-left
         float left 
         width 52%
@@ -1581,7 +1641,7 @@ input
         
     .coll-mod-type12a
       padding-bottom 90px
-      padding-top 50px
+      padding-top 20px
       .type12a-left      
         display inline-block 
         width calc(50% - 12px)
