@@ -1257,22 +1257,24 @@ input
 
 
 
-
+// work work
 
 
 // COLL 02 story
 
 .coll002-temp
+  overflow-x hidden
   img 
     width 100%
     height auto
     display block
 
-
+.coll-mod-type12a,
 .coll-mod-type11a,
 .coll-mod-type10a,
 .coll-mod-type9a,
 .coll-mod-type8a,
+.coll-mod-type8b,
 .coll-mod-type7a,
 .coll-mod-type6a,
 .coll-mod-type5a,
@@ -1301,6 +1303,7 @@ input
     .coll-mod-type10a > div,
     .coll-mod-type9a > div,
     .coll-mod-type8a > div,
+    .coll-mod-type8b > div,
     .coll-mod-type7a > div,
     .coll-mod-type6a > div,
     .coll-mod-type5a > div,
@@ -1312,7 +1315,9 @@ input
       
     .coll-mod-type1a,
     .coll-mod-type4a,
-    .coll-mod-type3a
+    .coll-mod-type3a,
+    .coll-mod-type9a,
+    .coll-mod-type12a
       padding-bottom 40px
       padding-top 50px
       
@@ -1326,7 +1331,7 @@ input
         width calc(50% - 4px)
         
     .coll-mod-type5a
-      padding-bottom 40px
+      padding-bottom 270px
       .type5a-left
         float left 
         width calc(50% - 4px)
@@ -1342,6 +1347,39 @@ input
       .type7a-right
         float right 
         width calc(50% - 4px)
+        
+    .coll-mod-type8a
+      margin 0 auto 100px
+      display flex
+      flex-wrap wrap
+      padding 0
+      width calc(100% + 10px)
+      > div
+        padding 0 10px 0 0 
+        flex-grow 1
+        width 33.3333%
+        
+    .coll-mod-type8b
+      .type8b-left
+        float left 
+        margin-left -40px
+        
+      .type8b-right
+        float right 
+        margin-right -40px
+        
+
+    .coll-mod-type10a
+      margin 0 auto 100px
+      display flex
+      flex-wrap wrap
+      padding 0
+      width calc(100% + 10px)
+      > div
+        padding 0 10px 0 0 
+        flex-grow 1
+        width 33.3333%
+      
 
 
 @media only screen and (min-width:580px) and (max-width:999px) 
@@ -1365,6 +1403,7 @@ input
     .coll-mod-type1a > div 
       transform none !important 
     
+
     .coll-mod-type1a,
     .coll-mod-type3a
       padding-bottom 90px
@@ -1374,7 +1413,6 @@ input
         display inline-block 
         width calc(50% - 12px)
         margin-right 10px
-
       .type1a-right,
       .type3a-right   
         display inline-block 
@@ -1387,22 +1425,36 @@ input
         img 
           margin-bottom 0px
           
-      .coll-mod-type4a
-        padding-bottom 90px
-        padding-top 50px
-        .type4a-left      
-          display inline-block 
-          width calc(50% - 12px)
-          margin-right 10px
-          img
-            margin-bottom -50px
+    .coll-mod-type4a
+      padding-bottom 90px
+      padding-top 50px
+      .type4a-left      
+        display inline-block 
+        width calc(50% - 12px)
+        margin-right 10px
+        img
+          margin-bottom -50px
 
-        .type4a-right   
-          display inline-block 
-          width calc(50% - 12px)    
-          margin-left 9px
+      .type4a-right   
+        display inline-block 
+        width calc(50% - 12px)    
+        margin-left 9px
           
-          
+    .coll-mod-type9a
+      padding-bottom 90px
+      padding-top 50px
+      .type9a-left      
+        display inline-block 
+        width calc(50% - 12px)
+        margin-right 10px
+        img
+          margin-bottom -50px
+
+      .type9a-right   
+        display inline-block 
+        width calc(50% - 12px)    
+        margin-left 9px
+        
     .coll-mod-type2a
       position relative
       padding-bottom 50px
@@ -1456,7 +1508,91 @@ input
         width 20%
         right 0px
         bottom 100px
+        
 
+    .coll-mod-type8a
+      margin 0 auto 80px
+      display flex
+      flex-wrap wrap
+      padding 0
+      width calc(100% + 10px)
+      padding-top 30px
+      > div
+        padding 0 10px 0 0 
+        flex-grow 1
+        width 15%
+      div.type8a-3
+        width 25%
+        img 
+          margin-top -30%
+
+
+    .coll-mod-type8b
+      margin-top 160px
+      .type8b-left
+        float left 
+        width 52%
+        width calc(50% + 40px)
+        margin-left -65px
+        
+      .type8b-right
+        float right 
+        width 52%
+        width calc(50% + 40px)
+        margin-right -65px
+        
+
+    .coll-mod-type10a
+      margin 0 auto 80px
+      display flex
+      flex-wrap wrap
+      padding 0
+      width calc(100% + 10px)
+      padding-top 30px
+      > div
+        padding 0 10px 0 0 
+        flex-grow 1
+        width 15%
+      div.type10a-4
+        width 25%
+        img 
+          margin-top -30%
+          
+    .coll-mod-type11a
+      position relative
+      padding-bottom 50px
+      .type5a-left
+        display block
+        width 40%
+        left 0px
+        // opacity .1
+        margin 0
+      .type5a-top
+        position absolute 
+        width 140px
+        margin 0
+        bottom 30%
+        left 36%
+      .type5a-right
+        position absolute  
+        width 140px
+        right 0px
+        bottom 55%
+        
+    .coll-mod-type12a
+      padding-bottom 90px
+      padding-top 50px
+      .type12a-left      
+        display inline-block 
+        width calc(50% - 12px)
+        margin-right 10px
+      
+      .type12a-right   
+        display inline-block 
+        width calc(50% - 12px)    
+        margin-left 9px
+        img
+          margin-bottom -50px
 
 
 @media only screen and (min-width:1000px) 
@@ -1589,22 +1725,118 @@ input
         bottom 160px
 
   
+  .coll-mod-type8a
+    margin 200px auto 80px
+    display flex
+    flex-wrap wrap
+    padding 0
+    width calc(100% + 10px)
+    padding-top 30px
+    > div
+      padding 0 10px 0 0 
+      flex-grow 1
+      width 15%
+    div.type8a-3
+      width 25%
+      img 
+        margin-top -30%
 
 
 
+  .coll-mod-type8b
+    margin-top 130px
+    margin-bottom 100px
+    .type8b-left
+      float left 
+      width 52%
+      width calc(50% + 55px)
+      margin-left -65px
+      
+    .type8b-right
+      float right 
+      width 52%
+      width calc(50% + 55px)
+      margin-right -65px
+
+
+  .coll-mod-type9a
+    border 1px dotted red
+    padding-top 300px
+    margin-bottom -150px
+    .type9a-left      
+      display inline-block 
+      width calc(50% - 12px)
+      margin-right 10px
+      img
+        margin-bottom -50px
+    .type9a-right   
+      display inline-block 
+      width calc(50% - 12px)    
+      margin-left 9px
+
+
+  .coll-mod-type10a
+    margin 200px auto 80px
+    display flex
+    flex-wrap wrap
+    padding 0
+    width calc(100% + 10px)
+    padding-top 30px
+    > div
+      padding 0 10px 0 0 
+      flex-grow 1
+      width 15%
+    div.type10a-4
+      width 25%
+      img 
+        margin-top -30%
 
 
 
+  .coll-mod-type11a
+    position relative
+    margin 0  
+    padding 0
+    padding-top 10px
+    padding-bottom 300px
+    // margin-bottom 0
+    margin-top 0
+    // border 1px solid #ccc
+    .type5a-left
+      display block
+      width 480px
+      left 0px
+      bottom 0px
+      // opacity .5
+      margin 0
+    .type5a-top
+      position absolute 
+      width 300px
+      margin 0
+      bottom -100px
+      left 36%
+      // border 1px solid red
+    .type5a-right
+      position absolute  
+      width 300px
+      right 0px
+      bottom 20px
+      bottom -200px
 
-
-
-
-
-
-
-
-
-
+  .coll-mod-type12a
+    margin-bottom -200px
+    padding-top 250px
+    .type12a-left      
+      display inline-block 
+      width calc(50% - 12px)
+      margin-right 10px
+    
+    .type12a-right   
+      display inline-block 
+      width calc(50% - 12px)    
+      margin-left 9px
+      img
+        margin-bottom -50px
 
 
 
