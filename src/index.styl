@@ -254,11 +254,13 @@ input
   height 0
   transition all 0.25s linear
   border-bottom 1px dashed #ccc
-  
+  // transform translateY(-100%)
 
 
 .primary-nav.showMenu 
-  height 80vh
+  // transition: all .4s ease-in-out;
+  // transform: translateY(0)
+  // height 80vh
   overflow-y auto
   @media only screen and (min-width:0px) and (max-width:999px)
     height 100vh
@@ -267,6 +269,16 @@ input
   @media only screen and (min-width:1100px)
     min-height 800px
 
+
+
+.primary-nav.showMenu-add
+  // transition all .4s ease-in-out
+  // transform translateY(0)
+
+.primary-nav.showMenu-remove
+  // transition all .8s ease-in-out
+  // transform translateY(-100%)
+  
 
 .primary-nav div,
 .primary-nav li  
@@ -766,69 +778,78 @@ input
 
    
 
-  .animate-slide 
-    background white
-    position fixed
-    z-index 50
-    width  100%
-    height 100%
-    top  0px
-    -webkit-transform  translate3d(0,0,0)
-    transform  translate3d(0,0,0,)
-    -webkit-backface-visibility  hidden
-    backface-visibility  hidden
-    -webkit-perspective  1000
-    perspective  1000
 
 
-  .animate-slide.ng-hide-add,
-  .animate-slide.ng-hide-remove 
-    display block !important
 
 
-  // .primary-nav.showMenu,
-  .animate-slide.ng-hide-remove.ng-hide-remove-active 
-    -webkit-animation 0.3s slide-down
-    animation 0.3s slide-down
+
+.animate-slide 
+  background white
+  position fixed
+  z-index 50
+  width  100%
+  height 100%
+  top  0px
+  -webkit-transform  translate3d(0,0,0)
+  transform  translate3d(0,0,0,)
+  -webkit-backface-visibility  hidden
+  backface-visibility  hidden
+  -webkit-perspective  1000
+  perspective  1000
 
 
-  .animate-slide.ng-hide-add.ng-hide-add-active 
-    -webkit-animation 0.3s 
-    animation 0.3s slide-up
+.animate-slide.ng-hide-add,
+.animate-slide.ng-hide-remove 
+  display block !important
 
 
-  .animate-slide.ng-hide 
-    top -100%
-    display block !important
+// .primary-nav.showMenu,
+.animate-slide.ng-hide-remove.ng-hide-remove-active 
+  -webkit-animation 0.3s slide-down
+  animation 0.3s slide-down
+  // transition all .4s ease-in-out
+  // transform translateY(0)
 
 
-  /* Chrome, Safari, Opera */
-  @-webkit-keyframes slide-down
-  {
-    0%     {top:-100;}
-    100%   {top:0%;}
-  }
-
-  /* Standard syntax */
-  @keyframes slide-down
-  {
-    0%     {top:-100%;}
-    100%   {top:0%;}
-  }
+.animate-slide.ng-hide-add.ng-hide-add-active 
+  -webkit-animation 0.3s 
+  animation 0.3s slide-up
+  // transition all .4s ease-in-out
+  // transform translateY(100)
 
 
-  /* Chrome, Safari, Opera */
-  @-webkit-keyframes slide-up
-  {
-    0%   {top:0%;}
-    100%  {top:-100%;}
-  }
+.animate-slide.ng-hide 
+  top -100%
+  display block !important
 
-  @keyframes slide-up
-  {
-    0%   {top: 0%;}
-    100%  {top: -100%;}
-  }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slide-down
+{
+  0%     {top:-100;}
+  100%   {top:0%;}
+}
+
+/* Standard syntax */
+@keyframes slide-down
+{
+  0%     {top:-100%;}
+  100%   {top:0%;}
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slide-up
+{
+  0%   {top:0%;}
+  100%  {top:-100%;}
+}
+
+@keyframes slide-up
+{
+  0%   {top: 0%;}
+  100%  {top: -100%;}
+}
 
 
 
