@@ -15,6 +15,8 @@ var deskNav = require('./app/deskNav');
 var grassFooter = require('./app/grassFooter');
 var grassHeader = require('./app/grassHeader');
 
+var runConfig = require('./run');
+
 require('./index.styl');
 require('angular-animate');
 // require('ng-parallax');
@@ -35,4 +37,5 @@ angular
   .component('collection001story', collection001story)
   .component('collection002', collection002)
   .component('collection002story', collection002story)
-  .component('objets', objets);
+  .component('objets', objets)
+  .run(runConfig);

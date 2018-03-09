@@ -993,7 +993,11 @@ input
 
 
 
-// BRAND
+/* ==========================  */
+
+/* BRAND                       */
+
+/* ==========================  */
 
 .brand-center
   // 
@@ -1243,7 +1247,126 @@ input
 
 
 
-// Coll 002
+
+
+@media only screen and (min-width:0px) and (max-width:579px) 
+
+  .insta-photos-cont
+      margin 40px auto 30px
+      display flex
+      flex-wrap wrap
+      padding 0
+      margin-left -5px
+      > div 
+        padding 4px 
+        flex-grow 1
+        width 50%
+        img 
+          width 100%
+          height auto
+          display block
+          
+  .brand-foot
+    padding-bottom 100px
+    .brand-press1
+      padding-bottom 10px
+      
+    .brand-follow1
+      padding-top 40px
+      
+    .brand-follow2
+      padding-left 50%
+      margin-top -20px
+
+
+@media only screen and (min-width:580px) and (max-width:999px) 
+
+  .insta-photos-cont
+    margin 80px auto 30px
+    display flex
+    flex-wrap wrap
+    padding 0
+    margin-left -10px
+    > div 
+      padding 10px 
+      flex-grow 1
+      width 33.3333%
+      img 
+        width 100%
+        height auto
+        display block
+        
+
+  .brand-foot
+    padding-bottom 100px
+    position relative
+    .brand-press1
+      position absolute
+      top 0px
+      left 0px
+      
+    .brand-press2
+      position absolute
+      top 40px
+      left 0px
+      
+    .brand-follow1
+      padding-left 68%
+      padding-bottom 10px
+      
+    .brand-follow2
+      padding-left 68%
+      
+
+
+@media only screen and (min-width:1000px) 
+
+ .insta-photos-cont
+    margin 68px auto 50px
+    max-width 1440px
+    display flex
+    flex-wrap wrap
+    padding 0 
+    margin-left -10px
+
+    > div 
+      padding 10px 
+      flex-grow 1
+      width 16.6666%
+      img 
+        width 100%
+        height auto
+        display block
+        
+  .brand-foot
+    padding-bottom 200px
+    margin 68px auto 50px
+    max-width 1440px
+    display flex
+    flex-wrap wrap
+    padding 0 
+    margin-left -10px
+
+    > div 
+      padding 10px 
+      flex-grow 1
+      width 16.6666%
+      // border 1px dotted red
+      img 
+        width 100%
+        height auto
+        display block
+    >div.brand-press2,
+    >div.brand-follow2
+      white-space nowrap
+
+
+
+/* ==========================  */
+
+/* COLLECTION 002              */
+
+/* ==========================  */
 
 
 .coll002-head
@@ -1365,14 +1488,14 @@ input
 
 
 
+/* ==========================  */
 
+/* COLLECTION 002 STORY        */
 
+/* ==========================  */
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-// COLL 02 story
 
 .coll001-temp,
 .coll002-temp
@@ -2842,6 +2965,121 @@ input
   content  " "
   clear  both
   height  0
+
+
+
+// ---
+
+
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in-vid {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:.5s;
+  -moz-animation-duration:.5s;
+  animation-duration:.5s;
+}
+
+
+.fade-in.one {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  animation-delay: .6s;
+}
+.fade-in.four {
+  -webkit-animation-delay: .9s;
+  -moz-animation-delay: .9s;
+  animation-delay: .9s;
+}
+
+.fade-in.five {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.six {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+.fade-in.seven {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.fade-in.eight {
+  -webkit-animation-delay: 2.1s;
+  -moz-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+.fade-in.nine {
+  -webkit-animation-delay: 2.4s;
+  -moz-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+.fade-in.ten {
+  -webkit-animation-delay: 2.7s;
+  -moz-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+
+.fade-in.eleven {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.fade-in.twelve {
+  -webkit-animation-delay: 3.3s;
+  -moz-animation-delay: 3.3s;
+  animation-delay: 3.3s;
+}
+
+
+
 
 
 
