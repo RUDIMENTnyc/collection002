@@ -5,8 +5,14 @@
   <div class="home-container">
     <div class="single-item">
       <div class="slide1 slidee"></div>
-      <div class="slide2 slidee"></div>
-      <div class="slide3 slidee"></div>
+      <div class="slide2 slidee">
+        <div class="slide2-img1"></div>
+        <div class="slide2-img2"></div>
+      </div>
+      <div class="slide3 slidee">
+        <div class="slide3-img1"></div>
+        <div class="slide3-img2"></div>
+      </div>
     </div>
   </div>
 
@@ -21,12 +27,12 @@
     $(".single-item").slick({
       dots: false,
       infinite: true,
-      speed: 500,
+      speed: 800,
       arrows: false,
       cssEase: 'linear',
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 5000,
     });
     // console.log( "ready!" );
 
