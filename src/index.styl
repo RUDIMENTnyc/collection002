@@ -177,6 +177,11 @@ h1,h2,h3,h4,h5,h6
 
 a 
   color black
+  
+
+a:hover 
+  color #7A7A7A
+
 
 h1 
   font-size 16px
@@ -269,7 +274,7 @@ input
     min-height 860px
   @media only screen and (min-width:1100px)
     min-height 800px
-    min-height 100vh  /*temp nav*/
+    // min-height 100vh  /*temp nav*/
 
 
 
@@ -489,7 +494,8 @@ input
       transition-property #ffffff,#000000
       // border-bottom 4px solid transparent
     a:hover 
-      opacity .8
+      // opacity .8
+      color #7A7A7A
     a.active
       // color blue !important
   li::after
@@ -943,7 +949,7 @@ input
     height 960px
     background-position center center
     background-size cover
-    background-attachment fixed
+    // background-attachment fixed
     
 
 
@@ -1388,8 +1394,12 @@ input
   a 
     color black
     text-decoration none
+  a:hover 
+    color #7A7A7A
+  a.active
+    color #7A7A7A
   a.deco 
-    text-decoration underline
+    // text-decoration underline
 
 
 @media only screen and (min-width:0px) and (max-width:579px) 
