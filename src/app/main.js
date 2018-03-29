@@ -20,6 +20,11 @@ function mainController($document, $log, $scope, $http, $location, $state, $wind
   //     }
   //   }
   // };
+  $scope.isdiplay = false;
+  // $scope.showsearch = function () {
+  //   $scope.isdiplay = !$scope.isdiplay;
+  //   $log.info('clicks');
+  // };
 
 }
 
@@ -27,3 +32,4 @@ module.exports = {
   template: require('./main.html'),
   controller: mainController
 };
+
