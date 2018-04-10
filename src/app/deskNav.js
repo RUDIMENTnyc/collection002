@@ -1,5 +1,6 @@
-function deskNavController($log, $scope, $location) {
+function deskNavController($document, $log, $scope, $location) {
   'ngInject';
+  $document = document;
   // this.text = 'My brand new component!';
   // $log.info($location);
 
